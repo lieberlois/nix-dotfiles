@@ -69,6 +69,45 @@
         mru-spaces = false;
       };
 
+      # customize finder
+      finder = {
+        _FXShowPosixPathInTitle = true; # show full path in finder title
+        FXEnableExtensionChangeWarning = false; # disable warning when changing file extension
+        QuitMenuItem = true; # allow quitting via ⌘ + Q; doing so will also hide desktop icons 
+        ShowPathbar = true; # show path bar
+        ShowStatusBar = true; # show status bar
+        AppleShowAllExtensions = true; # show all file extensions
+      };
+
+      # customize trackpad
+      trackpad = {
+        Clicking = true; # enable tap to click
+        TrackpadRightClick = true; # enable two finger right click
+      };
+
+      # customize macOS
+      NSGlobalDomain = {
+        # `defaults read NSGlobalDomain "xxx"`
+        "com.apple.swipescrolldirection" = true; # enable natural scrolling(default to true)
+        "com.apple.sound.beep.feedback" = 0; # disable beep sound when pressing volume up/down key
+
+        "com.apple.springing.enabled" = true; # enable springing
+        "com.apple.springing.delay" = 0.0;
+
+        # Appearance
+        # If you press and hold certain keyboard keys when in a text area, the key’s character begins to repeat.
+        # This is very useful for vim users, they use `hjkl` to move cursor.
+        # sets how long it takes before it starts repeating.
+        InitialKeyRepeat = 15; # normal minimum is 15 (225 ms), maximum is 120 (1800 ms)
+        # sets how fast it repeats once it starts.
+        KeyRepeat = 1; # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
+
+        NSAutomaticCapitalizationEnabled = false; # disable auto capitalization
+        NSAutomaticDashSubstitutionEnabled = false; # disable auto dash substitution
+        NSAutomaticPeriodSubstitutionEnabled = false; # disable auto period substitution
+        NSAutomaticQuoteSubstitutionEnabled = false; # disable auto quote substitution
+        NSAutomaticSpellingCorrectionEnabled = false; # disable auto spelling correction
+      };
     };
   };
 }
