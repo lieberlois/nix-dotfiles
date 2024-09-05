@@ -6,7 +6,7 @@
   programs.home-manager.enable = true;
   # programs.zsh.enable = true;
 
-  # home.packages = [
-  #   pkgs.htop
-  # ];
+  home.packages = [
+    pkgs.htop
+  ];
 }
