@@ -10,11 +10,31 @@
 
   programs.zsh.enable = true;
 
-  # homebrew = {
-  #   enable = true;
-  #   casks = [
-  #   ];
-  # };
+  homebrew = {
+    enable = true;
+    casks = [];
+    brews = [
+      "bat"
+      "duf"
+      "eza"
+      "fzf"
+      "iproute2mac"
+      "kube-ps1"
+      "kubernetes-cli"
+      "lazygit"
+      "neovim"
+      "powerlevel10k"
+      "stern"
+      "terraform"
+      "terragrunt"
+      "tmux"
+      "tpm"
+      "tree-sitter"
+      "zoxide"
+      "zsh-autosuggestions"
+      "zsh-syntax-highlighting"
+    ];
+  };
 
   # Enable TouchID for Sudo with Tmux Fix
   # security.pam.enableSudoTouchIdAuth = true;  -- this doesnt work with TMUX
