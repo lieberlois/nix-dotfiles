@@ -17,7 +17,7 @@
   # };
 
   # Enable TouchID for Sudo with Tmux Fix
-  security.pam.enableSudoTouchIdAuth = true;
+  # security.pam.enableSudoTouchIdAuth = true;  -- this doesnt work with TMUX
 
   environment = {
     etc."sudoers.d/000-sudo-touchid" = {
