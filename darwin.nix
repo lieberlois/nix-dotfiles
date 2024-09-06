@@ -24,6 +24,7 @@
       "lazygit"
       "neovim"
       "powerlevel10k"
+      "ripgrep"
       "stern"
       "terraform"
       "terragrunt"
