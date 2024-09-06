@@ -14,7 +14,6 @@
   home.packages = with pkgs; [
     htop
     jq
-    yq
     sops
     kubernetes-helm
     kubectl

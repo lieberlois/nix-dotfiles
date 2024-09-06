@@ -31,6 +31,7 @@
       "tmux"
       "tpm"
       "tree-sitter"
+      "yq"
       "zoxide"
       "zsh-autosuggestions"
       "zsh-syntax-highlighting"
