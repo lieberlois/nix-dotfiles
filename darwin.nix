@@ -15,6 +15,9 @@
     casks = [];
     brews = [
       "bat"
+      "checkov"
+      "colima"
+      "docker"
       "duf"
       "eza"
       "fzf"
@@ -31,6 +34,7 @@
       "tmux"
       "tpm"
       "tree-sitter"
+      "watch"
       "yq"
       "zoxide"
       "zsh-autosuggestions"
