@@ -12,14 +12,14 @@
   #     syntaxHighlighting.enable = true;
 
   home.packages = with pkgs; [
+    fd
     htop
     jq
-    sops
-    kubernetes-helm
+    k9s
     kubectl
     kubectx
-    fd
-    k9s
+    kubernetes-helm
     pre-commit
+    sops
   ];
 }

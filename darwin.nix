@@ -12,8 +12,11 @@
 
   homebrew = {
     enable = true;
-    casks = [];
+    casks = [
+      "bitwarden"
+    ];
     brews = [
+      "awscli"
       "bat"
       "checkov"
       "colima"
