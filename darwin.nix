@@ -14,6 +14,8 @@
     enable = true;
     casks = [
       "bitwarden"
+      "utm"
+      "google-cloud-sdk"
     ];
     brews = [
       "awscli"
@@ -24,7 +26,9 @@
       "duf"
       "eza"
       "fzf"
+      "go"
       "iproute2mac"
+      "kind"
       "kube-ps1"
       "kubernetes-cli"
       "lazygit"
@@ -33,7 +37,9 @@
       "ripgrep"
       "stern"
       "terraform"
+      "terraform-docs"
       "terragrunt"
+      "tflint"
       "tmux"
       "tpm"
       "tree-sitter"
@@ -42,6 +48,7 @@
       "zoxide"
       "zsh-autosuggestions"
       "zsh-syntax-highlighting"
+      "qemu"
     ];
   };
 
