@@ -13,35 +13,56 @@
   homebrew = {
     enable = true;
     casks = [
+      "acreom"
       "bitwarden"
+      "google-cloud-sdk"
+      "obsidian"
+      "raycast"
+      "utm"
+      "visual-studio-code"
     ];
     brews = [
+      "ansible"
       "awscli"
       "bat"
       "checkov"
       "colima"
+      "cosign"
+      "dagger"
       "docker"
+      "docker-compose"
       "duf"
       "eza"
       "fzf"
+      "go"
+      "hcloud"
       "iproute2mac"
+      "kind"
       "kube-ps1"
       "kubernetes-cli"
+      "ko"
       "lazygit"
       "neovim"
+      "node"
+      "hashicorp/tap/packer"
       "powerlevel10k"
+      "qemu"
       "ripgrep"
       "stern"
-      "terraform"
-      "terragrunt"
+      "terraform-docs"
+      "tflint"
       "tmux"
       "tpm"
       "tree-sitter"
+      "trivy"
       "watch"
       "yq"
       "zoxide"
       "zsh-autosuggestions"
       "zsh-syntax-highlighting"
+    ];
+    taps = [
+      "hashicorp/tap"
     ];
   };
 

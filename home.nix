@@ -20,6 +20,7 @@
     kubectx
     kubernetes-helm
     pre-commit
+    shellcheck
     sops
   ];
 }
