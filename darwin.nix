@@ -1,7 +1,7 @@
 { pkgs, lib, ... }: {
-
-  services.nix-daemon.enable = true;
+system.stateVersion = 6;
   nix = {
+    enable = true;
     package = pkgs.nix;
     settings = {
       "extra-experimental-features" = [ "nix-command" "flakes" ];
@@ -13,9 +13,9 @@
   homebrew = {
     enable = true;
     casks = [
-      "acreom"
       "bitwarden"
       "google-cloud-sdk"
+      "ngrok"
       "obsidian"
       "raycast"
       "utm"
@@ -26,29 +26,36 @@
       "awscli"
       "bat"
       "checkov"
+      "clusterctl"
       "colima"
       "cosign"
       "dagger"
+      "dive"
       "docker"
       "docker-compose"
+      "docker-credential-helper-ecr"
       "duf"
       "eza"
       "fzf"
       "go"
+      "hashicorp/tap/packer"
       "hcloud"
       "iproute2mac"
+      "k3d"
       "kind"
+      "ko"
       "kube-ps1"
       "kubernetes-cli"
-      "ko"
       "lazygit"
+      "linkerd"
       "neovim"
       "node"
-      "hashicorp/tap/packer"
+      "ollama"
       "powerlevel10k"
       "qemu"
       "ripgrep"
       "stern"
+      "tenv"
       "terraform-docs"
       "tflint"
       "tmux"
@@ -60,6 +67,7 @@
       "zoxide"
       "zsh-autosuggestions"
       "zsh-syntax-highlighting"
+    "argocd"
     ];
     taps = [
       "hashicorp/tap"
@@ -108,7 +116,7 @@
         mineffect = "scale"; # Change minimize/maximize window effect
         enable-spring-load-actions-on-all-items = true; # Enable spring loading for all Dock items
         expose-animation-duration = 0.1; # Speed up Mission Control animations
-        expose-group-by-app = false; # Do not group windows by application in Mission Control
+        expose-group-apps = false; # Do not group windows by application in Mission Control
         autohide = true; # automatically hide and show the dock
         autohide-time-modifier = 0.0; # Remove the auto-hiding Dock delay
         autohide-delay = 0.0; # Remove the auto-hiding Dock delay
